@@ -4,85 +4,186 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>รับสมัคร 10 ร้านต้นแบบ | HiTeang Hub</title>
-<meta name="description" content="HiTeang Hub เปิดรับ 10 ร้านต้นแบบแรก สำหรับคนอยากเปิดร้านเดลิเวอรี่หรือร้านกาแฟจากที่บ้าน">
+<meta name="description" content="เปิดรับ 10 ร้านต้นแบบแรก สำหรับคนอยากเริ่มร้านเดลิเวอรี่หรือร้านกาแฟเล็ก ๆ กับ HiTeang Hub">
 <style>
-body{margin:0;font-family:Arial,Tahoma,sans-serif;background:#f5f5f5;color:#111;line-height:1.7}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Tahoma,sans-serif}
+body{background:#f6f6f6;color:#111;line-height:1.7}
 a{text-decoration:none;color:inherit}
-.hero{background:#050505;color:#fff;padding:80px 24px;text-align:center}
-.hero h1{font-size:46px;margin:0 0 12px}
-.hero span{color:#e00000}
-.hero p{font-size:20px;max-width:760px;margin:0 auto 26px;color:#ddd}
-.btn{display:inline-block;background:#d50000;color:#fff;padding:14px 28px;border-radius:10px;font-weight:bold}
-.container{max-width:1100px;margin:auto;padding:55px 24px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
-.card{background:#fff;border-radius:18px;padding:26px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
-.card h2{margin-top:0}
-.badge{display:inline-block;background:#d50000;color:#fff;padding:6px 12px;border-radius:20px;font-size:13px;font-weight:bold}
-ul{padding-left:22px}
-.section-title{font-size:34px;margin-bottom:8px}
-.note{background:#111;color:#fff;border-radius:22px;padding:34px;margin-top:35px}
-footer{background:#050505;color:#aaa;text-align:center;padding:28px}
+.container{max-width:1180px;margin:auto;padding:0 24px}
+.btn{display:inline-block;background:#e00000;color:#fff;padding:15px 28px;border-radius:12px;font-weight:800}
+
+header{background:#050505;color:#fff;padding:18px 0;border-bottom:1px solid #222}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:28px;font-weight:900}.logo span{color:#e00000}
+nav a{margin-left:24px;color:#eee;font-weight:700}
+
+.hero{
+background:
+linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.45),rgba(0,0,0,.9)),
+url('assets/images/hero.jpg');
+background-size:cover;background-position:center;
+color:#fff;padding:110px 0
+}
+.hero h1{font-size:64px;line-height:1.1;margin-bottom:18px}
+.hero h1 span{color:#e00000}
+.hero p{font-size:22px;max-width:720px;color:#eee;margin-bottom:28px}
+.hero-features{display:flex;gap:28px;margin-top:40px;flex-wrap:wrap}
+.hero-features div{color:#eee;font-weight:700}
+
+section{padding:70px 0}
+.title{text-align:center;margin-bottom:34px}
+.title h2{font-size:40px}.title p{color:#555;font-size:18px}
+
+.target-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.target-card{
+background:#fff;border-radius:24px;overflow:hidden;
+box-shadow:0 12px 35px rgba(0,0,0,.1);
+display:grid;grid-template-columns:220px 1fr
+}
+.target-card img{width:100%;height:100%;object-fit:cover}
+.target-body{padding:30px}
+.badge{display:inline-block;background:#e00000;color:#fff;border-radius:20px;padding:6px 14px;font-weight:800;margin-bottom:10px}
+.target-body h3{font-size:30px;margin-bottom:10px}
+.target-body li{margin:7px 0}
+
+.benefits{background:#fff}
+.benefit-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.benefit{
+background:#fafafa;border:1px solid #eee;border-radius:20px;padding:22px;text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.04)
+}
+.benefit .icon{font-size:34px;margin-bottom:10px}
+.benefit h3{font-size:18px;margin-bottom:6px}
+.benefit p{font-size:14px;color:#666}
+
+.note{background:#111;color:#fff;border-radius:28px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.note h2{font-size:38px}.note p{color:#ddd;font-size:18px}
+.box{background:#1f1f1f;border-radius:22px;padding:28px}
+.box p{margin:10px 0}
+
+footer{background:#050505;color:#aaa;text-align:center;padding:30px}
+
+@media(max-width:900px){
+nav{display:none}
+.hero{padding:80px 0}
+.hero h1{font-size:42px}
+.target-grid,.note{grid-template-columns:1fr}
+.target-card{grid-template-columns:1fr}
+.target-card img{height:240px}
+.benefit-grid{grid-template-columns:repeat(2,1fr)}
+}
 </style>
 </head>
+
 <body>
 
+<header>
+<div class="container nav">
+  <a class="logo" href="index.html"><span>Hi</span>TEANG Hub</a>
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="about.html">เกี่ยวกับเรา</a>
+    <a href="projects.html">โครงการของเรา</a>
+    <a href="knowledge.html">ความรู้</a>
+    <a href="contact.html">ติดต่อเรา</a>
+  </nav>
+</div>
+</header>
+
 <section class="hero">
-<h1>เปิดรับ <span>10 ร้านต้นแบบแรก</span></h1>
-<p>สำหรับคนที่อยากเริ่มธุรกิจอาหารเดลิเวอรี่ หรือร้านกาแฟเล็ก ๆ กับ HiTeang Hub</p>
-<a class="btn" href="contact.html">สมัครเป็นร้านต้นแบบ</a>
+<div class="container">
+  <h1>เปิดรับ<br><span>10 ร้านต้นแบบแรก</span></h1>
+  <p>สำหรับคนที่อยากเริ่มร้านเดลิเวอรี่หรือร้านกาแฟเล็ก ๆ กับ HiTeang Hub</p>
+  <a class="btn" href="contact.html">สมัครเป็นร้านต้นแบบ →</a>
+
+  <div class="hero-features">
+    <div>🍳 สูตร ต้นทุน เมนู พร้อมใช้</div>
+    <div>📈 แนะนำการเริ่มต้นที่ทำตามได้จริง</div>
+    <div>🤝 เป็นเพื่อนคู่คิด เติบโตไปด้วยกัน</div>
+  </div>
+</div>
 </section>
 
+<section>
 <div class="container">
+  <div class="title">
+    <h2>เรากำลังหาใคร?</h2>
+    <p>10 คนแรกที่อยากเริ่มจริง พร้อมทดลองทำจริง และเติบโตไปพร้อมกับเรา</p>
+  </div>
 
-<h2 class="section-title">เรากำลังหาใคร?</h2>
-<p>HiTeang Hub ต้องการ 10 คนแรกที่อยากเริ่มจริง พร้อมทดลองทำจริง และเติบโตไปพร้อมกับเรา</p>
+  <div class="target-grid">
+    <div class="target-card">
+      <img src="assets/images/delivery.jpg" alt="ร้านอาหารเดลิเวอรี่">
+      <div class="target-body">
+        <span class="badge">5 ร้าน</span>
+        <h3>ร้านอาหารเดลิเวอรี่</h3>
+        <ul>
+          <li>คนอยากเปิดร้านจากครัวที่บ้าน</li>
+          <li>ร้านกาแฟที่อยากเพิ่มเมนูอาหาร</li>
+          <li>มือใหม่ที่อยากมีรายได้เสริม</li>
+          <li>พร้อมทดลองขายผ่าน Grab / LINE MAN</li>
+        </ul>
+      </div>
+    </div>
 
-<div class="grid">
-<div class="card">
-<span class="badge">5 ร้าน</span>
-<h2>ร้านอาหารเดลิเวอรี่</h2>
-<ul>
-<li>คนอยากเปิดร้านจากครัวที่บ้าน</li>
-<li>ร้านกาแฟที่อยากเพิ่มเมนูอาหาร</li>
-<li>มือใหม่ที่อยากมีรายได้เสริม</li>
-<li>พร้อมทดลองขายผ่าน Grab / LINE MAN</li>
-</ul>
+    <div class="target-card">
+      <img src="assets/images/americano.jpg" alt="ร้านกาแฟ Americano Only">
+      <div class="target-body">
+        <span class="badge">5 ร้าน</span>
+        <h3>ร้านกาแฟ / Americano Only</h3>
+        <ul>
+          <li>คนอยากเปิดร้านกาแฟเล็ก ๆ</li>
+          <li>เริ่มจากเมนูน้อย ลงทุนไม่สูง</li>
+          <li>สนใจแนว Americano Only</li>
+          <li>อยากเรียนรู้เรื่องต้นทุนและการขาย</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
+</section>
 
-<div class="card">
-<span class="badge">5 ร้าน</span>
-<h2>ร้านกาแฟ / Americano Only</h2>
-<ul>
-<li>คนอยากเปิดร้านกาแฟเล็ก ๆ</li>
-<li>เริ่มจากเมนูน้อย ลงทุนไม่สูง</li>
-<li>สนใจแนว Americano Only</li>
-<li>อยากเรียนรู้เรื่องต้นทุนและการขาย</li>
-</ul>
+<section class="benefits">
+<div class="container">
+  <div class="title">
+    <h2>10 ร้านต้นแบบจะได้รับอะไร?</h2>
+  </div>
+
+  <div class="benefit-grid">
+    <div class="benefit"><div class="icon">👨‍🍳</div><h3>สูตรเริ่มต้น</h3><p>สูตรอาหารหรือกาแฟที่ทำตามได้ง่าย</p></div>
+    <div class="benefit"><div class="icon">🧮</div><h3>ตารางต้นทุน</h3><p>ช่วยคำนวณต้นทุน ราคาขาย และกำไร</p></div>
+    <div class="benefit"><div class="icon">🖼️</div><h3>รูปเมนูพร้อมใช้</h3><p>ใช้เป็นแนวทางทำเมนูออนไลน์</p></div>
+    <div class="benefit"><div class="icon">🏪</div><h3>คำแนะนำเปิดร้าน</h3><p>ตั้งชื่อร้าน จัดเมนู ตั้งราคา</p></div>
+    <div class="benefit"><div class="icon">👥</div><h3>ชุมชนสมาชิก</h3><p>พูดคุย แลกเปลี่ยน และแก้ปัญหา</p></div>
+    <div class="benefit"><div class="icon">⭐</div><h3>Success Story</h3><p>บันทึกเรื่องราวบน hiteang.com</p></div>
+  </div>
 </div>
+</section>
+
+<section>
+<div class="container">
+  <div class="note">
+    <div>
+      <h2>เราไม่ได้มองหาแค่ลูกค้า</h2>
+      <p>แต่กำลังมองหา “พาร์ทเนอร์รุ่นแรก” ที่อยากเริ่มธุรกิจจริง และพร้อมสร้างเรื่องราวไปพร้อมกับ HiTeang Hub</p>
+      <br>
+      <a class="btn" href="contact.html">สมัครเข้าร่วมโครงการ</a>
+    </div>
+    <div class="box">
+      <h3>แบ่งเป็น</h3>
+      <p>🍳 5 ร้านอาหารเดลิเวอรี่</p>
+      <p>☕ 5 ร้านกาแฟ / Americano Only</p>
+      <p>ร้านต้นแบบรุ่นแรกจะถูกบันทึกเป็น Success Story บน hiteang.com</p>
+    </div>
+  </div>
+
+  <p style="margin-top:30px"><a href="index.html">← กลับหน้าแรก</a></p>
 </div>
+</section>
 
-<h2 class="section-title" style="margin-top:50px">10 ร้านต้นแบบจะได้รับอะไร?</h2>
-
-<div class="grid">
-<div class="card"><h2>สูตรเริ่มต้น</h2><p>สูตรอาหารหรือสูตรกาแฟที่ทำตามได้ง่าย เหมาะกับมือใหม่</p></div>
-<div class="card"><h2>ตารางต้นทุน</h2><p>ช่วยคำนวณต้นทุน ราคาขาย และกำไรเบื้องต้น</p></div>
-<div class="card"><h2>รูปเมนูพร้อมใช้</h2><p>ใช้เป็นแนวทางทำเมนูออนไลน์ โพสต์ หรือสื่อขาย</p></div>
-<div class="card"><h2>คำแนะนำเปิดร้าน</h2><p>แนวทางตั้งชื่อร้าน จัดเมนู ตั้งราคา และเริ่มขายจริง</p></div>
-<div class="card"><h2>ชุมชนสมาชิก</h2><p>พูดคุย แลกเปลี่ยน และแก้ปัญหาไปด้วยกัน</p></div>
-<div class="card"><h2>ได้เป็น Success Story</h2><p>ร้านต้นแบบรุ่นแรกจะถูกบันทึกเป็นเรื่องราวความสำเร็จบน hiteang.com</p></div>
-</div>
-
-<div class="note">
-<h2>เป้าหมายของโครงการนี้</h2>
-<p>เราไม่ได้มองหาแค่ลูกค้าที่ซื้อสินค้า แต่กำลังมองหา “พาร์ทเนอร์รุ่นแรก” ที่อยากเริ่มธุรกิจจริง และพร้อมสร้างเรื่องราวไปพร้อมกับ HiTeang Hub</p>
-<p><a class="btn" href="contact.html">ติดต่อสมัครเข้าร่วม</a></p>
-</div>
-
-<p style="margin-top:30px"><a href="index.html">← กลับหน้าแรก</a></p>
-
-</div>
-
-<footer>© 2026 HiTeang Hub</footer>
+<footer>
+© 2026 HiTeang Hub
+</footer>
 
 </body>
 </html>
