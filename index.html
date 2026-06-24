@@ -12,123 +12,92 @@
 <meta property="og:description" content="เปลี่ยนครัวที่บ้านให้เป็นธุรกิจจริง">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://hiteang.com">
+<meta property="og:image" content="https://hiteang.com/assets/images/hero.jpg">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,'Tahoma',sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Tahoma,sans-serif}
 body{background:#f4f4f4;color:#111;line-height:1.6}
 a{text-decoration:none;color:inherit}
 .container{max-width:1180px;margin:auto;padding:0 24px}
 
-header{
-background:#050505;color:#fff;position:sticky;top:0;z-index:10;
-border-bottom:1px solid rgba(255,255,255,.08)
-}
+header{background:#050505;color:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(255,255,255,.1)}
 .nav{height:76px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:30px;font-weight:900;letter-spacing:.5px;color:#fff}
+.logo{font-size:30px;font-weight:900;color:#fff;line-height:1}
 .logo span{color:#e00000}
-.logo small{display:block;font-size:11px;color:#aaa;letter-spacing:1.5px;margin-top:-6px}
-.menu{display:flex;gap:26px;align-items:center;font-size:15px}
+.logo small{display:block;font-size:11px;color:#aaa;letter-spacing:2px;margin-top:4px}
+.menu{display:flex;gap:24px;align-items:center;font-size:15px}
 .menu a{color:#eee}
 .menu a:hover{color:#e00000}
 .nav-actions{display:flex;gap:10px}
-.btn{
-display:inline-block;padding:12px 22px;border-radius:10px;font-weight:700;
-background:#d50000;color:#fff;border:1px solid #d50000
-}
+
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:700;background:#d50000;color:#fff;border:1px solid #d50000}
 .btn.dark{background:#222;border-color:#555}
 .btn.outline{background:transparent;border-color:#fff;color:#fff}
 
 .hero{
 background:
-linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.65),rgba(0,0,0,.92)),
-radial-gradient(circle at 20% 30%,rgba(220,0,0,.28),transparent 35%),
-radial-gradient(circle at 80% 30%,rgba(160,80,30,.28),transparent 35%),
-#111;
-color:#fff;padding:95px 0 85px
+linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.45),rgba(0,0,0,.88)),
+url('assets/images/hero.jpg');
+background-size:cover;
+background-position:center;
+color:#fff;
+padding:115px 0 120px;
 }
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
-.kicker{color:#ff3b3b;font-weight:800;margin-bottom:12px}
-.hero h1{font-size:56px;line-height:1.12;margin-bottom:18px}
+.hero-box{max-width:660px}
+.kicker{color:#ff3333;font-weight:800;margin-bottom:14px}
+.hero h1{font-size:58px;line-height:1.12;margin-bottom:20px}
 .hero h1 span{color:#e00000}
-.hero p{font-size:19px;color:#ddd;max-width:620px;margin-bottom:28px}
+.hero p{font-size:20px;color:#eee;margin-bottom:30px}
 .hero-buttons{display:flex;gap:14px;flex-wrap:wrap}
-.hero-card{
-background:linear-gradient(145deg,#1a1a1a,#050505);
-border:1px solid rgba(255,255,255,.12);
-border-radius:26px;padding:28px;box-shadow:0 25px 60px rgba(0,0,0,.35)
-}
-.hero-card h3{font-size:24px;margin-bottom:18px}
-.feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.feature{
-background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);
-padding:16px;border-radius:16px
-}
-.feature b{color:#fff;display:block;margin-bottom:4px}
-.feature span{color:#aaa;font-size:14px}
 
 section{padding:70px 0}
-.section-title{display:flex;justify-content:space-between;align-items:end;margin-bottom:26px}
+.section-title{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px}
 .section-title h2{font-size:36px}
-.section-title p{color:#666;margin-top:6px}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.project-card{
-min-height:285px;border-radius:24px;overflow:hidden;color:#fff;position:relative;
-background:linear-gradient(135deg,#c80000,#3a1008)
-}
-.project-card.coffee{background:linear-gradient(135deg,#24120a,#7a3d1d)}
-.project-content{position:absolute;inset:auto 0 0 0;padding:28px;background:linear-gradient(transparent,rgba(0,0,0,.82))}
-.project-card h3{font-size:28px;margin-bottom:8px}
-.project-card ul{margin:12px 0 18px 20px;color:#eee}
+.section-title p{color:#666}
 
-.why{background:#fff}
-.why-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
-.why-box{
-background:#fafafa;border:1px solid #eee;border-radius:18px;padding:20px;text-align:center
+.projects{background:#fff}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.project-card{
+height:360px;border-radius:24px;overflow:hidden;color:#fff;position:relative;
+background:#111;box-shadow:0 14px 35px rgba(0,0,0,.12)
 }
+.project-card img{width:100%;height:100%;object-fit:cover;display:block}
+.project-card:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,.85))}
+.project-content{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:28px}
+.project-content h3{font-size:30px;margin-bottom:6px}
+.project-content ul{margin:14px 0 20px 20px;color:#eee}
+
+.why{background:#f4f4f4}
+.why-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.why-box{background:#fff;border:1px solid #eee;border-radius:18px;padding:20px;text-align:center}
 .why-box .icon{font-size:30px;margin-bottom:8px}
-.why-box b{display:block;margin-bottom:4px}
+.why-box b{display:block}
 .why-box span{font-size:13px;color:#666}
 
-.roadmap{background:#f4f4f4}
+.roadmap{background:#fff}
 .steps{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
-.step{text-align:center;background:#fff;border-radius:18px;padding:20px;border:1px solid #eee}
-.step .num{
-width:46px;height:46px;border-radius:50%;background:#d50000;color:#fff;
-display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:900
-}
-.step b{display:block;margin-bottom:4px}
+.step{text-align:center;background:#fafafa;border-radius:18px;padding:20px;border:1px solid #eee}
+.step .num{width:46px;height:46px;border-radius:50%;background:#d50000;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:900}
+.step b{display:block}
 .step span{font-size:13px;color:#666}
 
-.stories{background:#fff}
+.stories{background:#f4f4f4}
 .story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.story{
-background:#fff;border-radius:22px;overflow:hidden;border:1px solid #eee;
-box-shadow:0 10px 25px rgba(0,0,0,.06)
-}
-.story-img{
-height:180px;background:
-linear-gradient(135deg,rgba(0,0,0,.25),rgba(180,0,0,.25)),
-linear-gradient(135deg,#222,#8b2a18);
-display:flex;align-items:end;padding:18px;color:#fff;font-weight:800
-}
+.story{background:#fff;border-radius:22px;overflow:hidden;border:1px solid #eee;box-shadow:0 10px 25px rgba(0,0,0,.06)}
+.story img{width:100%;height:210px;object-fit:cover;display:block}
 .story-body{padding:20px}
 .story small{color:#d50000;font-weight:800}
 .story h3{font-size:22px;margin:5px 0}
 .story p{color:#555;font-size:15px}
 
-.knowledge{background:#f4f4f4}
+.knowledge{background:#fff}
 .knowledge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.article{
-background:#fff;border-radius:18px;padding:20px;border:1px solid #eee
-}
+.article{background:#fafafa;border-radius:18px;padding:20px;border:1px solid #eee}
 .article .tag{color:#d50000;font-weight:800;font-size:13px}
 .article h3{font-size:20px;margin:8px 0}
 .article p{font-size:14px;color:#666}
 
-.cta{
-background:linear-gradient(135deg,#111,#000,#7c0000);
-color:#fff;text-align:center
-}
+.cta{background:linear-gradient(135deg,#111,#000,#7c0000);color:#fff;text-align:center}
 .cta h2{font-size:42px;margin-bottom:12px}
 .cta p{color:#ddd;margin-bottom:24px}
 
@@ -139,10 +108,11 @@ footer a{display:block;color:#bbb;margin:6px 0;font-size:14px}
 .copy{border-top:1px solid #222;margin-top:30px;padding-top:18px;color:#777;font-size:13px}
 
 @media(max-width:900px){
-.menu{display:none}
-.hero-grid,.cards,.story-grid,.footer-grid{grid-template-columns:1fr}
-.why-grid,.steps,.knowledge-grid{grid-template-columns:repeat(2,1fr)}
+.menu,.nav-actions{display:none}
+.hero{padding:90px 0}
 .hero h1{font-size:40px}
+.project-grid,.story-grid,.footer-grid{grid-template-columns:1fr}
+.why-grid,.steps,.knowledge-grid{grid-template-columns:repeat(2,1fr)}
 }
 </style>
 </head>
@@ -168,8 +138,8 @@ footer a{display:block;color:#bbb;margin:6px 0;font-size:14px}
 </header>
 
 <section class="hero">
-<div class="container hero-grid">
-  <div>
+<div class="container">
+  <div class="hero-box">
     <div class="kicker">เริ่มต้นธุรกิจของคุณวันนี้</div>
     <h1>จากครัวที่บ้าน<br>หรือร้านกาแฟเล็ก ๆ<br><span>สู่ธุรกิจจริง</span></h1>
     <p>HiTeang Hub รวมสูตร ความรู้ เครื่องมือ ต้นทุน และชุมชน เพื่อช่วยให้คุณเริ่มต้นธุรกิจอาหารและเครื่องดื่มได้ง่ายขึ้น</p>
@@ -178,20 +148,10 @@ footer a{display:block;color:#bbb;margin:6px 0;font-size:14px}
       <a class="btn outline" href="projects.html">เริ่มธุรกิจกาแฟ</a>
     </div>
   </div>
-
-  <div class="hero-card">
-    <h3>ทำไมต้อง HiTeang Hub?</h3>
-    <div class="feature-grid">
-      <div class="feature"><b>สูตรพร้อมใช้</b><span>เริ่มทำได้ง่าย</span></div>
-      <div class="feature"><b>คำนวณต้นทุน</b><span>รู้กำไรก่อนขาย</span></div>
-      <div class="feature"><b>สื่อพร้อมใช้</b><span>รูปเมนูและโพสต์</span></div>
-      <div class="feature"><b>ชุมชนผู้เริ่มต้น</b><span>ไม่ต้องเดินคนเดียว</span></div>
-    </div>
-  </div>
 </div>
 </section>
 
-<section>
+<section class="projects">
 <div class="container">
   <div class="section-title">
     <div>
@@ -200,8 +160,9 @@ footer a{display:block;color:#bbb;margin:6px 0;font-size:14px}
     </div>
   </div>
 
-  <div class="cards">
+  <div class="project-grid">
     <div class="project-card">
+      <img src="assets/images/delivery.jpg" alt="Delivery Startup">
       <div class="project-content">
         <h3>Delivery Startup</h3>
         <p>สำหรับคนอยากเปิดร้านเดลิเวอรี่จากบ้าน</p>
@@ -215,7 +176,8 @@ footer a{display:block;color:#bbb;margin:6px 0;font-size:14px}
       </div>
     </div>
 
-    <div class="project-card coffee">
+    <div class="project-card">
+      <img src="assets/images/americano.jpg" alt="Americano Only">
       <div class="project-content">
         <h3>Americano Only</h3>
         <p>สำหรับคนอยากเริ่มธุรกิจกาแฟแบบเรียบง่าย</p>
@@ -284,16 +246,7 @@ footer a{display:block;color:#bbb;margin:6px 0;font-size:14px}
 
   <div class="story-grid">
     <div class="story">
-      <div class="story-img">Story 000</div>
-      <div class="story-body">
-        <small>HiTeang</small>
-        <h3>จากร้านอาหารสู่ HiTeang Hub</h3>
-        <p>8 ปีของซอสไฮ้เตียง ทำให้เราเห็นว่าลูกค้าต้องการมากกว่าสินค้า แต่ต้องการโอกาสเริ่มต้นธุรกิจ</p>
-      </div>
-    </div>
-
-    <div class="story">
-      <div class="story-img">Story 001</div>
+      <img src="assets/images/story-001.jpg" alt="ร้านเพราบ้านน้อย">
       <div class="story-body">
         <small>Delivery Startup</small>
         <h3>ร้านเพราบ้านน้อย</h3>
@@ -302,11 +255,20 @@ footer a{display:block;color:#bbb;margin:6px 0;font-size:14px}
     </div>
 
     <div class="story">
-      <div class="story-img">Story 002</div>
+      <img src="assets/images/story-002.jpg" alt="The Boy Cafe">
       <div class="story-body">
         <small>Americano Only</small>
         <h3>The Boy Cafe</h3>
         <p>ร้านกาแฟเล็กที่เริ่มจากแนวคิดเรียบง่าย เมนูน้อย ต้นทุนชัด และค่อย ๆ เติบโต</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <img src="assets/images/delivery.jpg" alt="HiTeang Story">
+      <div class="story-body">
+        <small>HiTeang</small>
+        <h3>จากร้านอาหารสู่ HiTeang Hub</h3>
+        <p>8 ปีของซอสไฮ้เตียง ทำให้เราเห็นว่าลูกค้าต้องการมากกว่าสินค้า แต่ต้องการโอกาสเริ่มต้นธุรกิจ</p>
       </div>
     </div>
   </div>
@@ -324,26 +286,10 @@ footer a{display:block;color:#bbb;margin:6px 0;font-size:14px}
   </div>
 
   <div class="knowledge-grid">
-    <div class="article">
-      <div class="tag">FOOD</div>
-      <h3>เปิดร้านเดลิเวอรี่จากบ้าน เริ่มยังไง</h3>
-      <p>แนวทางแรกสำหรับคนอยากขายอาหารออนไลน์</p>
-    </div>
-    <div class="article">
-      <div class="tag">COFFEE</div>
-      <h3>เปิดร้านกาแฟเล็ก ๆ ใช้งบเท่าไร</h3>
-      <p>วางแผนต้นทุนก่อนเริ่มจริง</p>
-    </div>
-    <div class="article">
-      <div class="tag">BUSINESS</div>
-      <h3>คำนวณต้นทุนอาหารอย่างมืออาชีพ</h3>
-      <p>รู้ต้นทุน รู้กำไร ลดความเสี่ยง</p>
-    </div>
-    <div class="article">
-      <div class="tag">EVENT</div>
-      <h3>สรุปเทรนด์อาหารและกาแฟจากงานแสดงสินค้า</h3>
-      <p>เก็บความรู้จากงานจริงมาแบ่งปัน</p>
-    </div>
+    <div class="article"><div class="tag">FOOD</div><h3>เปิดร้านเดลิเวอรี่จากบ้าน เริ่มยังไง</h3><p>แนวทางแรกสำหรับคนอยากขายอาหารออนไลน์</p></div>
+    <div class="article"><div class="tag">COFFEE</div><h3>เปิดร้านกาแฟเล็ก ๆ ใช้งบเท่าไร</h3><p>วางแผนต้นทุนก่อนเริ่มจริง</p></div>
+    <div class="article"><div class="tag">BUSINESS</div><h3>คำนวณต้นทุนอาหารอย่างมืออาชีพ</h3><p>รู้ต้นทุน รู้กำไร ลดความเสี่ยง</p></div>
+    <div class="article"><div class="tag">EVENT</div><h3>สรุปเทรนด์อาหารและกาแฟ</h3><p>เก็บความรู้จากงานจริงมาแบ่งปัน</p></div>
   </div>
 </div>
 </section>
